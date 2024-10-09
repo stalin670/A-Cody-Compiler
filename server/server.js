@@ -1,7 +1,11 @@
 const express = require("express");
 const Axios = require('axios');
+const cors = require('cors');
 const PORT = process.env.PORT || 8000;
 const app = express();
+
+app.use(cors());
+app.use(express.json());
 
 // api end point
 app.post('/compile', (req, res) => {
