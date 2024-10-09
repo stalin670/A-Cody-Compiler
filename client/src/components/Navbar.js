@@ -21,7 +21,7 @@ const Navbar = ({
     { value: "light", label: "Light" },
   ];
   return (
-    <div className="Navbar">
+    <div className="navbar">
       <h1>A Cody Compiler</h1>
       <Select
         options={languages}
